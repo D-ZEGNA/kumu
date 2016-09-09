@@ -387,7 +387,13 @@ Error message and password prompt
 
 <li>Beautiful</li>
 
+<li>CSS</li>
+
 <li>done</li>
+
+<li>Draft of 'CSS'</li>
+
+<li>Draft of 'RunningMan'</li>
 
 <li>HTML</li>
 
@@ -398,6 +404,8 @@ Error message and password prompt
 <li>Pajama Set</li>
 
 <li>PS</li>
+
+<li>Python</li>
 
 <li>RunningMan</li>
 
@@ -8321,8 +8329,8 @@ Beautiful</pre>
 <div created="20160826060954918" modified="20160908052029993" title="$:/state/folded/攻城狮">
 <pre>show</pre>
 </div>
-<div created="20160907121533751" modified="20160908052655659" title="$:/state/folded/論語">
-<pre>show</pre>
+<div created="20160907121533751" modified="20160908115327771" title="$:/state/folded/論語">
+<pre>hide</pre>
 </div>
 <div created="20160831104728193" modified="20160831104736862" title="$:/state/folded/任务列表">
 <pre>show</pre>
@@ -8396,13 +8404,13 @@ Beautiful</pre>
 <div created="20160825010443758" modified="20160908052619023" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20160825010158487" modified="20160908053437675" title="$:/state/tab/sidebar--1835078512">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20160825010158487" modified="20160908090821716" title="$:/state/tab/sidebar--1835078512">
+<pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div created="20160805001145219" modified="20160826025529048" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditorToolbar</pre>
 </div>
-<div list="Tricks Beautiful" title="$:/StoryList">
+<div list="[[Draft of 'CSS']] 論語 Beautiful" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8897,14 +8905,16 @@ This plugin contains tools to help slice up long texts into individual tiddlers.
 <div created="20160805000904820" modified="20160826012223980" title="$:/view">
 <pre>pop</pre>
 </div>
-<div created="20160826025907972" modified="20160908052028607" tags="" title="攻城狮" type="text/x-markdown">
+<div created="20160826025907972" modified="20160908091251308" tags="" title="攻城狮" type="text/x-markdown">
 <pre>##[Javascript](#JS)
 
 ##[HTML](#HTML)
 
 ##[CSS](#CSS)
 
-##[Markdown](#Markdown)</pre>
+##[Markdown](#Markdown)
+
+##[Python](#Python)</pre>
 </div>
 <div created="20160826060313122" modified="20160826060806795" tags="" title="会计" type="text/x-markdown">
 <pre>##**折旧对税的影响**
@@ -10632,8 +10642,180 @@ RunningMan[搞笑](#RunningMan)
 
 wiki[语法](#WIKI语法)</pre>
 </div>
+<div created="20160908090835130" modified="20160908133109895" title="CSS" type="text/x-markdown">
+<pre>#1.目录侧边滚动,与主题三七分成
+
+前提
+ 
+* 由Markdown与ctrl+B 直接生成html文件
+
+代码
+
+	body .markdown-body
+	{
+	  width: 70%;
+	  border: 1px solid #ddd;
+	  margin: 16px auto;
+	  padding: 30px;
+	  float: right;
+	}
+
+	 body .toc{
+	  width: 25%;
+	  position: fixed;
+	  height: 100%;
+	  overflow: auto;
+	}
+
+	.toc a{color: black;}
+
+
+#2.自定义字体
+
+* step1.新建文件夹A
+*  step2.在A中放入html文件,ttf文件
+* step3.html文件标签&lt;style&gt;内写入以下代码
+
+#3.图片居中
+代码
+
+    &lt;div style=&quot;text-align:center; width:100%; height:50%&quot;&gt;
+        
+        &lt;img src=&quot;替图片url换&quot; style=&quot;vertical-align:middle;&quot; width=&quot;100%&quot; /&gt;
+    
+    &lt;/div&gt;
+
+精简代码
+
+    &lt;img src=&quot;替图片url换&quot;  width=&quot;100%&quot; /&gt;
+
+#4.网易云音乐
+
+代码
+
+    &lt;embed src=&quot;http://music.163.com/style/swf/widget.swf?sid=替音乐最后数字ID1,ID2,ID3,...,IDn换&amp;type=2&amp;auto=0&amp;width=310&amp;height=500&quot; quality=&quot;high&quot;  width=&quot;350&quot; height=&quot;600&quot; &gt;
+
+#5.网易云mv
+
+#6.优酷视频
+
+前提
+
+* 替视频ID换在视频原链接`id_`与`.html`之间所有代码，包括==之类的
+
+举个栗子
+
+* XNTYyMzgyNjQ0
+
+版本A之嵌入网页
+
+    &lt;iframe height=600 width=100% src=&quot;http://player.youku.com/embed/替视频ID换&quot; frameborder=0 &gt;&lt;/iframe&gt;  
+
+版本B之免除广告
+
+    &lt;embed src=&quot;http://www.haofangyuan.net/youku/videoyk.jsp?id=替视频ID换&quot; quality=&quot;high&quot; width=&quot;100%&quot; height=&quot;600&quot; &gt;
+</pre>
+</div>
 <div color="#bbffff" created="20160901021455345" modified="20160901021457733" tags="" title="done">
 <pre></pre>
+</div>
+<div created="20160908090835130" draft.of="CSS" draft.title="CSS" modified="20160909062830230" title="Draft of 'CSS'" type="text/x-markdown">
+<pre>#1.目录侧边滚动,与主题三七分成
+
+前提
+ 
+* 由Markdown与ctrl+B 直接生成html文件
+
+代码
+
+	body .markdown-body
+	{
+	  width: 70%;
+	  border: 1px solid #ddd;
+	  margin: 16px auto;
+	  padding: 30px;
+	  float: right;
+	}
+
+	 body .toc{
+	  width: 25%;
+	  position: fixed;
+	  height: 100%;
+	  overflow: auto;
+	}
+
+	.toc a{color: black;}
+
+
+#2.自定义字体
+
+* step1.新建文件夹A
+*  step2.在A中放入html文件,ttf文件
+* step3.html文件标签&lt;style&gt;内写入以下代码
+
+#3.图片居中
+
+代码
+
+    &lt;img src=&quot;替图片url换&quot;  width=&quot;100%&quot; /&gt;
+
+#4.网易云音乐播放列表居中
+
+代码
+    
+    &lt;style type=&quot;text/css&quot;&gt;
+	
+	.outside
+    {
+		width: 100%;
+		height: 700px;
+	}
+	.bingo
+    {
+		display: block;
+		margin: 0 auto;
+	}
+    &lt;/style&gt;
+
+    &lt;div class=&quot;outside&quot;&gt;
+        
+        &lt;embed class=&quot;bingo&quot; src=&quot;http://music.163.com/style/swf/widget.swf?sid=替音乐最后数字ID1,ID2,ID3,...,IDn换&amp;type=2&amp;auto=0&amp;width=310&amp;height=500&quot; quality=&quot;high&quot;  width=&quot;330&quot; height=&quot;600&quot; &gt;
+    
+    &lt;/div&gt;
+
+举个栗子
+
+    sid=94809,20954632&amp;type=2&gt;
+
+#5.网易云mv
+
+#6.优酷视频
+
+前提
+
+* 替视频ID换在视频原链接`id_`与`.html`之间所有代码，包括==之类的
+
+举个栗子
+
+* XNTYyMzgyNjQ0
+
+版本A之嵌入网页
+
+    &lt;iframe height=600 width=100% src=&quot;http://player.youku.com/embed/替视频ID换&quot; frameborder=0 &gt;&lt;/iframe&gt;  
+
+版本B之免除广告
+
+    &lt;embed src=&quot;http://www.haofangyuan.net/youku/videoyk.jsp?id=替视频ID换&quot; quality=&quot;high&quot; width=&quot;100%&quot; height=&quot;600&quot; &gt;
+</pre>
+</div>
+<div created="20160901022340385" draft.of="RunningMan" draft.title="RunningMan" modified="20160908132037913" tags="task" title="Draft of 'RunningMan'">
+<pre>!!20160821 情侣演戏
+
+&lt;embed src=&quot;http://www.haofangyuan.net/youku/videoyk.jsp?id=XMTY5NDAwMjUwMA==&quot; width=&quot;100%&quot; height=&quot;800&quot;  &gt;
+
+!! 20130526 金秀贤
+&lt;embed src=&quot;http://www.haofangyuan.net/youku/videoyk.jsp?id=XNTYyMzgyNjQ0&quot; quality=&quot;high&quot;  width=&quot;100%&quot; height=&quot;800&quot;  &gt;
+</pre>
 </div>
 <div created="20160908052039596" modified="20160908052538373" title="HTML" type="text/x-markdown">
 <pre>##**标签前缀图标**
@@ -10978,6 +11160,418 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 </div>
 <div created="20160825095406927" modified="20160901000846966" tags="task" title="PS" type="text/x-markdown">
 <pre>滤镜插件Nik Colloection[神器](http://brushes8.com/86468.html)</pre>
+</div>
+<div created="20160908085608914" modified="20160908090816098" tags="" title="Python" type="text/x-markdown">
+<pre>#0.Spider 框架
+
+* url管理池,目标是每次出列的url是不重复的
+  urlpool用队列`deque()`保证队尾进,队首出
+  seenpool用集合`set()`保证没有重复,每个新的url都要先问seenpool,再放入seenpool和urlpool
+
+* url下载器,目标获得可供解析的html_doc
+  运用requests的get或者post得到response,放在r中
+  response用`r.text`转换成html_doc,过程涉及编码的考虑
+
+* html_doc解析器,目标获得所需标签tag或属性attrs
+  运用`BeautifulSoup()`得到可用的类soup
+  soup用`.find_all(&quot;tag&quot;,attrs=re.compile(&quot;&quot;))`找到含所需属性的标签,放入box
+  对box做for迭代,依次处理,或放入某列表,或写入文件,或保存入文件夹,或放入url管理池
+
+
+#1.单页 图片 md
+
+前提条件
+
+* 网页是静态网，无登录验证
+
+* 由requests抓取的`r.text`可以无乱码的print出来
+
+实现效果
+
+* 图片网页的图片并写入Markdown
+
+版本A:完整思路
+	
+	#-*-coding:UTF-8-*-
+	
+	import requests
+	from bs4 import BeautifulSoup
+
+	linkpool = []
+	mtext = []
+
+	r = requests.get('http://guo.lu/')
+	rtext = r.text
+	soup = BeautifulSoup(rtext,&quot;html.parser&quot;,from_encoding='utf-8')
+	abox = soup.find_all(&quot;img&quot;)
+
+	for eacha in abox:
+		link = eacha[&quot;src&quot;]
+		link = &quot;![](%s)&quot;%link
+		linkpool.append(link)
+
+	mtext = str(linkpool)
+	mtext = mtext.replace(&quot;', '&quot;,&quot;\n&quot;)
+
+	f = open('C:/Users/keepd/Documents/mycode/new.md','w',encoding=&quot;UTF-8&quot;)
+	f.write(mtext)
+	f.close
+	print(&quot;Bingo&quot;)
+
+版本B:简洁版且与用户沟通
+
+	#-*-coding:UTF-8-*-
+
+	import requests
+	from bs4 import BeautifulSoup
+	
+	url = input('请输入要爬取的网站：')
+	r = requests.get(url)
+	rtext = r.text
+	soup = BeautifulSoup(rtext,&quot;html.parser&quot;,from_encoding='utf-8')
+	abox = soup.find_all(&quot;img&quot;)
+
+	with open('C:/Users/keepd/Documents/mycode/new.md','a',encoding=&quot;UTF-8&quot;) as f:
+		for eacha in abox:
+		    link = eacha[&quot;src&quot;]
+		    link = &quot;![](%s)&quot;%link
+		    f.write(link)
+
+	print(&quot;Bingo&quot;)
+
+版本C:把获取soup包装成一个函数
+
+	#-*-coding:UTF-8-*-
+	import requests
+	from bs4 import BeautifulSoup
+
+	starturl = 'http://guo.lu/'
+	
+	def get_soup(url):
+	    r = requests.get(url)
+	    if r.encoding is &quot;ISO-8859-1&quot;:
+	        r.encoding = &quot;utf-8&quot;
+	    else:
+	    	pass
+	    rtext = r.text
+	    soup = BeautifulSoup(rtext,&quot;html.parser&quot;,from_encoding='utf-8')
+	    return soup
+	        
+	soup = get_soup(starturl)
+	abox = soup.find_all(&quot;img&quot;)
+
+	with open('C:/Users/keepd/Documents/mycode/new.md','a',encoding=&quot;UTF-8&quot;) as f:
+		for eacha in abox:
+		    link = eacha[&quot;src&quot;]
+		    link = &quot;![](%s)&quot;%link
+		    f.write(link)
+
+	print(&quot;Bingo&quot;)
+
+#2.单页 link 
+
+前提条件
+
+* rtext无乱码，是html文档
+
+实现效果
+
+* 集合seenpool里面是不重复的已阅连接，队列linkpool里是待发掘的不重复的link
+
+* 获取图片网页的&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;中的链接地址
+	
+代码
+	
+        #-*-coding:UTF-8-*-
+        import requests,re
+        from bs4 import BeautifulSoup
+        from collections import deque
+
+        linkpool = deque()
+        seenpool = set()
+        inilink = 'http://guo.lu/'
+        linkpool.append(inilink)
+
+        counter = 0
+        while linkpool and counter&lt;=2:
+		
+		now = linkpool.popleft()
+		r = requests.get(now)
+		r.encoding=&quot;utf-8&quot;
+		rtext = r.text	
+
+		soup = BeautifulSoup(rtext,&quot;html.parser&quot;)
+		abox = soup.find_all(&quot;a&quot;,href=re.compile(r&quot;^http://guo.lu&quot;))
+		
+		for eacha in abox:
+			link = eacha[&quot;href&quot;]
+			if link not in seenpool:
+				seenpool |= {link}
+				linkpool.append(link)
+				print(link)
+			else:
+				continue 
+
+		counter = counter+1	
+
+        seenpool = str(seenpool)
+        linkpool = str(linkpool)
+        print(seenpool,linkpool,counter)
+        print(&quot;Bingo&quot;)
+
+#3.单页 网盘 md
+实现效果
+
+* 天天美剧的单页百度网盘资源写入Markdown文档
+
+代码
+
+	#-*-coding:UTF-8-*-
+
+	import requests,re
+	from bs4 import BeautifulSoup
+
+	now ='http://www.ttmeiju.com/meiju/Shameless.html'
+	r = requests.get(now)
+	rtext = r.text	
+	soup = BeautifulSoup(rtext,&quot;html.parser&quot;)
+	abox = soup.find_all(&quot;a&quot;,href=re.compile(r&quot;^http://pan.baidu.com&quot;))
+
+	with open('C:/Users/keepd/Documents/mycode/new.md','w',encoding='utf-8')as f:
+		i=1
+		for eacha in abox:
+			link = eacha[&quot;href&quot;]
+			f.write(&quot;[网盘连接&quot;+str(i)+&quot;](&quot;+str(link)+&quot;)&lt;/br&gt;&quot;)
+			i +=1
+	print(&quot;Bingo&quot;)
+
+#4.编码
+实现效果
+
+* 对于1的优化,包括编码和筛选
+
+* 应对`r.text`解码出状况，直接定义`r.encoding=&quot;utf-8&quot;`
+
+* 在进行BeautifulSoup的`.find_all()`时，直接筛选出带路径`src`的&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;
+
+
+版本A：连接全部放进linkpool,最后整体写入文件
+
+
+	#-*-coding:UTF-8-*-
+
+	import requests,re
+	from bs4 import BeautifulSoup
+	from collections import deque
+	
+	linkpool = deque()
+	mtext = []
+	
+	r = requests.get('http://j.news.163.com/docs/27/2016031601/BI8800TL051684TB.html')
+	r.encoding=&quot;utf-8&quot;
+	rtext = r.text
+	
+	soup = BeautifulSoup(rtext,&quot;html.parser&quot;,from_encoding='utf-8')
+	abox = soup.find_all(&quot;img&quot;,src=re.compile(&quot;^http.*jpg$&quot;))
+	for eacha in abox:
+	    link = eacha[&quot;src&quot;]
+	    link = &quot;![](%s)&quot;%link
+	    linkpool.append(link)
+	  
+	mtext = str(linkpool)
+	mtext = mtext.replace(&quot;', '&quot;,&quot;\n&quot;)
+	f = open('C:/Users/keepd/Documents/mycode/new.md','w',encoding=&quot;UTF-8&quot;)
+	f.write(mtext)
+	f.close
+	print(&quot;Bingo&quot;)
+
+版本B：连接每次迭代,直接写入文件
+
+	#-*-coding:UTF-8-*-
+	
+	import requests,re
+	from bs4 import BeautifulSoup
+	from collections import deque
+	from idlelib.IOBinding import encoding
+	
+	r = requests.get('http://j.news.163.com/docs/27/2016031601/BI8800TL051684TB.html')
+	r.encoding=&quot;utf-8&quot;
+	rtext = r.text
+	
+	soup = BeautifulSoup(rtext,&quot;html.parser&quot;,from_encoding='utf-8')
+	abox = soup.find_all(&quot;img&quot;,src=re.compile(&quot;^http.*jpg$&quot;))
+	
+	with open(&quot;C:/Users/keepd/Documents/mycode/new.md&quot;,&quot;a&quot;,encoding=&quot;utf-8&quot;) as f:
+	    for eacha in abox:
+	        link = eacha[&quot;src&quot;]
+	        link = &quot;![](%s)&quot;%link
+	        link = str(link)
+	        f.write(link)
+	print(&quot;Bingo&quot;)
+
+#5.翻页
+
+实现效果
+
+* 天天美剧按季资源可以翻页,把所有页面的网盘连接都写入Markdown
+	
+代码
+
+	#-*-coding:UTF-8-*-
+
+	import requests,re
+	from bs4 import BeautifulSoup
+	from collections import deque
+	from idlelib.IOBinding import encoding
+
+	start ='http://www.ttmeiju.com/meiju/Shameless.html'
+	urlpool = deque()
+	linkpool = []
+	#初始化：入口,url池,link池
+
+	def get_html():
+	        now = urlpool.popleft()
+	        r = requests.get(now)
+	        r.encoding = 'utf-8'
+	        rtext = r.text
+	        soup = BeautifulSoup(rtext,&quot;html.parser&quot;)
+	        abox = soup.find_all(&quot;a&quot;,href=re.compile(r&quot;^http://pan.baidu.com&quot;))
+	        for eacha in abox:
+	            link = eacha[&quot;href&quot;]
+	            linkpool.append(link)
+	#抓一个html文档中的link放入池中
+
+	def get_url(pageid):
+	    url = start+&quot;?page=%s&quot;%pageid
+	    urlpool.append(url)
+	#抓一个网页的url放入池中
+
+	pagestart = 1 
+	pageend = 3
+	for n in range(pagestart,pageend):
+	    get_url(n)
+	#迭代进行翻页
+
+	while urlpool:
+	    get_html()
+	#url池中还有货就循环
+
+	f = open('C:/Users/keepd/Documents/mycode/new.md','w',encoding=&quot;utf-8&quot;)
+	for i in range(1,len(linkpool)):
+		f.write(&quot;[网盘地址&quot;+str(i)+&quot;](&quot;+str(linkpool[i])+&quot;)&lt;/br&gt;&quot;)
+	f.close
+	print(&quot;Bingo&quot;)
+	#最后写markdown文件
+
+#6.小小Tips之编码
+
+* 默认情况下,忽略,不写`r.encoding = &quot;utf-8&quot;`,如果网页本身是gbk还写入此句,那么用BeautifulSoup的`.get_text()`就会得到中文乱码
+
+* 若经python查询`&gt;&gt;&gt;r.enconding`得到ISO-8859-1的编码,那么可以在`r.text`之前使用`r.encoding = &quot;utf-8&quot;`
+
+#7.下载
+A:图片
+
+	#-*-coding:UTF-8-*-
+
+	import requests
+	from bs4 import BeautifulSoup
+
+	r = requests.get('http://guo.lu/')
+	rtext = r.text
+	soup = BeautifulSoup(rtext,&quot;html.parser&quot;,from_encoding='utf-8')
+	abox = soup.find_all(&quot;img&quot;)
+
+	for eacha in abox:
+	    link = eacha[&quot;src&quot;]
+	    blink = requests.get(link).content
+	    with open('c:\myimg'+'/'+link[-12:],'wb') as f:
+	        f.write(blink)
+	    #将获得的图片连接转为Bytes Data即blink,`link[-12]`是以倒数12个字符命名
+	print(&quot;Bingo&quot;)
+
+
+B:音乐
+
+
+	#-*-coding:UTF-8-*-
+
+	import requests
+
+	url = input(&quot;请输入地址&quot;)
+	r = requests.get(url)
+	rtext = r.content
+
+	with open('c:\myimg'+'/'+'music.mp3','wb') as f:
+	    f.write(rtext)
+
+	print(&quot;Bingo&quot;)
+
+C:视频
+
+	
+	#-*-coding:UTF-8-*-
+
+	import requests
+
+	url = input(&quot;请输入地址&quot;)
+	r = requests.get(url)
+	rtext = r.content
+
+	with open('c:\myimg'+'/'+'movie.mp4','wb') as f:
+	    f.write(rtext)
+
+	print(&quot;Bingo&quot;)
+
+D:下载函数
+
+	
+
+
+#8.小小Tips之数据
+
+* 图片数据是Bytes Data,包含在绝对的url地址中,所有“下载保存”图片,就是把Bytes Data以`wb`形式写入文件夹
+
+#9.小小Tips之Spider
+
+* 参考No.6来决定要不要运用`r.encoding=&quot;utf-8&quot;`
+
+* 进行`soup.find_all(&quot;tag&quot;)`时,用`attrs=re.compile(&quot;&quot;)`同步筛选符合条件的&lt;code&gt;&amp;lt;tag&amp;gt;&lt;/code&gt;以此来避免for迭代时抛出异常
+
+#10.微博 单图
+
+* 微博入口用移动版`http://weibo.cn`,后面可添加目标用户名例如`/u/1900886092`
+
+* 抠下所有单图原图
+
+代码
+
+	#-*-coding:UTF-8-*-
+
+	import requests,re
+	from bs4 import BeautifulSoup
+
+	r = requests.get('http://weibo.cn/mfashionchina')
+	rtext = r.text
+	soup = BeautifulSoup(rtext,&quot;html.parser&quot;,from_encoding='utf-8')
+	abox = soup.find_all(&quot;a&quot;,href=re.compile(r&quot;^http://weibo.cn/mblog/oripic&quot;))
+
+	for eacha in abox:
+	    link = eacha[&quot;href&quot;]
+	    print(link)
+	print(&quot;Bingo&quot;)
+
+#11.小小Tips之windows打开.py文件
+
+* 方法A 在`python35`文件中新建`mycode`文件,在`mycode`文件中打开`cmd`,输入`python xx.py`
+
+* 方法B 在IDEL中打开`open xx.py`文件,然后`run module`
+
+#12.一个小游戏
+* 怎么做的
+&lt;embed play=&quot;true&quot; quality=&quot;high&quot; src=&quot;http://cdn.abowman.com/widgets/hamster/hamster.swf?&quot; &lt;=&quot;&quot; embed=&quot;&quot; height=&quot;225&quot; width=&quot;300&quot;&gt;
+
+</pre>
 </div>
 <div created="20160901022340385" modified="20160901024107472" tags="task" title="RunningMan">
 <pre>!!20160821 情侣演戏
